@@ -10,7 +10,7 @@ const execAsync = promisify(exec);
 export class HardhatService {
   private nodeProcess: ChildProcess | null = null;
 
-  // 👇 Chemin vers le dossier contenant Hardhat
+  // Chemin vers le dossier contenant Hardhat
   private readonly hardhatPath = path.resolve(
     __dirname,
     '../../../smart contract',
